@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2676D137-3B63-4156-A39E-BD26A787E08A}</ProjectGuid>
+    <RootNamespace>DragonEngine</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../DirectX8.0/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/wd4005 /wd4624 /wd4477 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../DirectX8.0/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/wd4005 /wd4624 /wd4477 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BoundBox.cpp" />
+    <ClCompile Include="BoundSphere.cpp" />
+    <ClCompile Include="Cylindrical3D.cpp" />
+    <ClCompile Include="FIXP16.cpp" />
+    <ClCompile Include="Line2D.cpp" />
+    <ClCompile Include="Matrix1x2.cpp" />
+    <ClCompile Include="Matrix1x3.cpp" />
+    <ClCompile Include="Matrix1x4.cpp" />
+    <ClCompile Include="Matrix2x2.cpp" />
+    <ClCompile Include="Matrix3x2.cpp" />
+    <ClCompile Include="Matrix3x3.cpp" />
+    <ClCompile Include="Matrix4x3.cpp" />
+    <ClCompile Include="Matrix4x4.cpp" />
+    <ClCompile Include="ParamLine2D.cpp" />
+    <ClCompile Include="ParamLine3D.cpp" />
+    <ClCompile Include="Plane3D.cpp" />
+    <ClCompile Include="Polar2D.cpp" />
+    <ClCompile Include="polygon2D.cpp" />
+    <ClCompile Include="Quaternion.cpp" />
+    <ClCompile Include="Spherical3D.cpp" />
+    <ClCompile Include="Triangle2D.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="Vector3.cpp" />
+    <ClCompile Include="Vector4.cpp" />
+    <ClCompile Include="VectorI2.cpp" />
+    <ClCompile Include="VectorI3.cpp" />
+    <ClCompile Include="VectorI4.cpp" />
+    <ClCompile Include="datatype.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="light.cpp" />
+    <ClCompile Include="material.cpp" />
+    <ClCompile Include="RenderSystem.cpp" />
+    <ClCompile Include="ZBuffer.cpp" />
+    <ClCompile Include="DMusic.cpp" />
+    <ClCompile Include="DSound.cpp" />
+    <ClCompile Include="InputSystem.cpp" />
+    <ClCompile Include="JoyStick.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="ErrorLog.cpp" />
+    <ClCompile Include="COBModel.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="terrain.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="BitmapFile.cpp" />
+    <ClCompile Include="BitmapImage.cpp" />
+    <ClCompile Include="GUISystem.cpp" />
+    <ClCompile Include="BSPEditor.cpp" />
+    <ClCompile Include="BSPTree.cpp" />
+    <ClCompile Include="MD2Container.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BoundBox.h" />
+    <ClInclude Include="BoundSphere.h" />
+    <ClInclude Include="Cylindrical3D.h" />
+    <ClInclude Include="FIXP16.h" />
+    <ClInclude Include="Line2D.h" />
+    <ClInclude Include="math.h" />
+    <ClInclude Include="Matrix1x2.h" />
+    <ClInclude Include="Matrix1x3.h" />
+    <ClInclude Include="Matrix1x4.h" />
+    <ClInclude Include="Matrix2x2.h" />
+    <ClInclude Include="Matrix3x2.h" />
+    <ClInclude Include="Matrix3x3.h" />
+    <ClInclude Include="Matrix4x3.h" />
+    <ClInclude Include="Matrix4x4.h" />
+    <ClInclude Include="ParamLine2D.h" />
+    <ClInclude Include="ParamLine3D.h" />
+    <ClInclude Include="Plane3D.h" />
+    <ClInclude Include="Polar2D.h" />
+    <ClInclude Include="polygon2D.h" />
+    <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="Spherical3D.h" />
+    <ClInclude Include="Triangle2D.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vector4.h" />
+    <ClInclude Include="VectorI2.h" />
+    <ClInclude Include="VectorI3.h" />
+    <ClInclude Include="VectorI4.h" />
+    <ClInclude Include="datatype.h" />
+    <ClInclude Include="engine.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="light.h" />
+    <ClInclude Include="material.h" />
+    <ClInclude Include="render.h" />
+    <ClInclude Include="RenderSystem.h" />
+    <ClInclude Include="ZBuffer.h" />
+    <ClInclude Include="audio.h" />
+    <ClInclude Include="DMusic.h" />
+    <ClInclude Include="DSound.h" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="InputSystem.h" />
+    <ClInclude Include="JoyStick.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="Anim.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="Physics.h" />
+    <ClInclude Include="ErrorLog.h" />
+    <ClInclude Include="COBModel.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="terrain.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="BitmapFile.h" />
+    <ClInclude Include="BitmapImage.h" />
+    <ClInclude Include="GUISystem.h" />
+    <ClInclude Include="BSPEditor.h" />
+    <ClInclude Include="BSPTree.h" />
+    <ClInclude Include="MD2Container.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

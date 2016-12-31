@@ -1,0 +1,145 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "File(&F)"
+    BEGIN
+        MENUITEM "Load.LEV File",               ID_FILE_LOAD_LEV
+        MENUITEM "Save.LEV File",               ID_FILE_SAVE_LEV
+        MENUITEM "Exit",                        40005
+    END
+    POPUP "View(&V)"
+    BEGIN
+        MENUITEM "ViewGrid",                    ID_VIEW_VIEWGRID
+        MENUITEM "ViewWall",                    ID_VIEW_VIEWWALL
+        MENUITEM "ViewFloor",                   ID_VIEW_VIEWFLOOR
+    END
+    POPUP "Compile(&C)"
+    BEGIN
+        MENUITEM "Compile .LEV and View",       ID_COMPILE_VIEW
+    END
+    MENUITEM "Help(&H)",                    ID_HELP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 0, 0, 255, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,39,83,50,14
+    LTEXT           "加载.LEV文件",IDC_STATIC,39,29,67,14
+    EDITTEXT        IDC_LEV_FILENAME,39,48,158,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "取消",IDCANCEL,124,83,50,14
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 240, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,40,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,124,75,50,14
+    LTEXT           "保存.LEV文件",IDC_STATIC,40,22,107,11
+    EDITTEXT        IDC_LEV_FILENAME,40,41,137,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

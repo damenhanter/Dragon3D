@@ -1,0 +1,4 @@
+﻿  dragon9_4.cpp
+dragon9_4.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+  Dragon.vcxproj -> G:\游戏引擎\Dragon3D演示\Dragon3D演示IV\Dragon3D演示IV\Debug\Dragon.exe
+  Dragon.vcxproj -> G:\游戏引擎\Dragon3D演示\Dragon3D演示IV\Dragon3D演示IV\Debug\Dragon.pdb (Full PDB)

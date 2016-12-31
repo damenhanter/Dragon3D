@@ -1,0 +1,5 @@
+
+Opening Error Output File (errorlog.txt) on Tue May 10 19:44:44.561, 2011
+
+
+Close the errorlog file output.
